@@ -1,0 +1,34 @@
+name: "simple_tiktok_single"
+mode: "dev"
+port: 8989
+version: "v0.1.1"
+
+# 日志配置
+log:
+  level: "debug"
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+
+# mysql配置
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  user: "root"
+  password: "root"
+  dbname: "simple_tiktok"
+  max_open_conns: 100
+  max_idle_conns: 20
+
+# redis配置
+redis:
+  host: "127.0.0.1"
+  port: 6379
+  password: "redis"
+  db: 0
+  pool_size: 100
+
+# 雪花算法配置
+snowflake:
+  start_time: "2023-01-01"
+  machine_id: 1
